@@ -1,0 +1,339 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "可乐脚本", HidePremium = false, SaveConfig = false, IntroText = "注入器："..identifyexecutor(), ConfigFolder = "可乐脚本"})
+
+local System = Window:MakeTab({
+	Name = "密钥系统",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+System:AddTextbox({
+	Name = "输入密钥",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		Key = Value
+	end
+})
+
+System:AddButton({
+	Name = "确定",
+	Callback = function()
+      	if Key == "114514" then
+      	    local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/xLRUSiKx"))()
+
+local Window = OrionLib:MakeWindow({Name = "可乐脚本", HidePremium = false, SaveConfig = true,IntroText = "可乐脚本", ConfigFolder = "可乐脚本"})
+
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.Position = UDim2.new(0.75,0,0.010,0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL.TextWrapped = true
+LBL.Visible = true
+
+local FpsLabel = LBL
+local Heartbeat = game:GetService("RunService").Heartbeat
+local LastIteration, Start
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+  LastIteration = tick()
+  for Index = #FrameUpdateTable, 1, -1 do
+FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+  end
+  FrameUpdateTable[1] = LastIteration
+  local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+CurrentFPS = CurrentFPS - CurrentFPS % 1
+  FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)
+
+local Tab = Window:MakeTab({	Name = "公告（必看）",	Icon = "rbxassetid://7734068321",	PremiumOnly = false})Tab:AddButton({	Name = "可乐大玉",	Callback = function()  	end})Tab:AddButton({	Name = "视频记得点赞加群持续更新",	Callback = function()  	end})OrionLib:Init()
+
+local Coke = Window:MakeTab({
+    Name = "doors",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+Coke:AddButton({
+	Name = "吸铁石",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+    end
+})
+Coke:AddButton({
+	Name = "剪刀",
+	Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+    end
+})    
+Coke:AddButton({
+	Name = "激光枪",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+    end
+})
+Coke:AddButton({
+	Name = "微山2.3.2",
+	Callback = function()
+--微山doors 2.3.2(愚人节快乐)
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+    end
+})
+Coke:AddButton({
+	Name = "MSDOORS(要FL)",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "Nerd脚本(要discord白名单)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsnerdv4.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "kingHub(已更新)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing/main/BlackKing%20Doors%20Mobile"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "不可能模式",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "Endless模式",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/check78/worldcuuuup/main/Script.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "物品复制枪",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/EverythingGunByNeRD.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "控制物品大小枪",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "香蕉枪(可在困难模式发射香蕉)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "手持臭猫",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "激光枪",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "手榴弹",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "圣光手雷",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "脚本doors",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/whXp1Ca2"))()
+  	end    
+})
+
+Coke:AddButton({
+	Name = "封印全部物品十字架要配合键盘脚本",
+	Callback = function()
+      	_G.Uses = 5000
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "玩偶脚本合集",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/s21b8TkT", true))()
+  	end
+})
+
+Coke:AddButton({
+	Name = "无限手电筒",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
+  	end
+})
+
+local Coke1 = Window:MakeTab({
+    Name = "世界最强脚本",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Coke1:AddButton({
+	Name = "上帝脚本用了直接无敌锁血全游戏通用热门的游戏我都试过",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Protected%20(30).lua", true))()
+  	end
+})
+
+local Coke2 = Window:MakeTab({
+    Name = "键盘脚本",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Coke2:AddButton({
+	Name = "键盘",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+
+local Coke3 = Window:MakeTab({
+    Name = "兵工厂",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Coke3:AddButton({
+	Name = "兵工厂(搬)",
+	Callback = function()
+      	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))()
+  	end
+})
+
+local Coke4 = Window:MakeTab({
+    Name = "巴掌模拟器",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})"
+
+Coke4:AddButton({
+	Name = "巴掌模拟器",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/R2O/main/LOADSTRING.lua"))()
+  	end
+})
+
+local Coke5 = Window:MakeTab({
+    Name = "通用功能",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+Coke5:AddButton({
+	Name = "夜视",
+	Callback = function()
+      	    if Value then
+      game.Lighting.Ambient = Color3.new(1, 1, 1)
+     else
+      game.Lighting.Ambient = Color3.new(0, 0, 0)
+    end
+  	end
+})
+
+Coke5:AddButton({
+	Name = "点击传送工具",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/1QxFnJe1"))()
+  	end
+})
+
+Coke5:AddButton({
+	Name = "IY",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end
+})
+
+Coke5:AddTextbox({
+  Name = "跳跃高度",
+   Default = "",
+   TextDisappear = true,
+   Callback = function(Value)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+  end
+})
+
+Coke5:AddTextbox({
+  Name = "移动速度",
+  Default = "",
+  TextDisappear = true,
+  Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+  end
+})
+
+Coke5:AddButton({
+	Name = "无限跳",
+		Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+  end
+})
+
+local Tab = Window:MakeTab({	Name = "公告（必看）",	Icon = "rbxassetid://7734068321",	PremiumOnly = false})Tab:AddButton({	Name = "脚本交流群242791295",	Callback = function()  	end})Tab:AddButton({	Name = "视频记得点赞加群持续更新",	Callback = function()  	end})OrionLib:Init()
+
+OrionLib:Init()
+      	else
+      	    OrionLib:MakeNotification({
+	            Name = "警告",
+	            Content = "没密钥玩你妈呢jb傻狗",
+	            Image = "rbxassetid://4483345998",
+	            Time = 5
+            })
+        end
+  	end
+})
+
+local Tab = Window:MakeTab({	Name = "密钥（必看）",	Icon = "rbxassetid://7734068321",	PremiumOnly = false})Tab:AddButton({	Name = "脚本密钥群242791295",	Callback = function()  	end})Tab:AddButton({	Name = "视频记得点赞加群持续更新",	Callback = function()  	end})OrionLib:Init()
